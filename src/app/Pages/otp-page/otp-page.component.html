@@ -1,10 +1,20 @@
 <div>
   <form class="get-otp-form">
-    <mat-form-field class="tel">
-      <mat-label>Telephone</mat-label>
-      <input type="tel" matInput placeholder="0711231235">
-    </mat-form-field>
-    <button mat-raised-button color="primary"(click)="sendOtp()">Get OTP</button>
+    
+   
   </form>
   <!-- <img src="../../../assets/icon/logo.png" cache-img="../../../assets/icon/logo.png"/> -->
+  <mat-grid-list cols="1" rowHeight="100px">
+
+    <mat-grid-tile>
+      <mat-form-field class="tel">
+        <mat-label>Telephone</mat-label>
+        <input type="tel" matInput placeholder="0711231235">
+      </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <button mat-raised-button color="primary"(click)="sendOtp()">Get OTP</button>
+    </mat-grid-tile>
+  </mat-grid-list>
   </div>
