@@ -1,10 +1,26 @@
-<div>
-    <form class="example-form">
-      <mat-form-field class="tel">
-        <mat-label>OTP</mat-label>
-        <input type="tel" matInput placeholder="000000">
-      </mat-form-field>
-      <button mat-raised-button color="primary" (click)="gotoPayment()">Confirm OTP</button>
-    </form>
-    <!-- <img src="../../../assets/icon/logo.png" cache-img="../../../assets/icon/logo.png"/> -->
+<div class="main">
+  <div class="logo">
+    <img src="../../../assets/icon/logo.jpg" alt="" class="logo-img">
+  </div>
+  <div class="form">
+    <div class="text">
+      <h2 class="text1">Welcome</h2>
+      <span class="text2">The Future of Pet Care is Here</span>
     </div>
+    <form class="example-form">
+      <mat-grid-list cols="1" rowHeight="100px">
+        <mat-grid-tile>
+          <mat-form-field class="tel">
+            <mat-label>OTP</mat-label>
+            <input type="tel" matInput placeholder="000000">
+          </mat-form-field>
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+          <button mat-raised-button color="primary" class="btn" (click)="gotoPayment()">Confirm OTP</button>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </form>
+  </div>
+  <!-- <img src="../../../assets/icon/logo.png" cache-img="../../../assets/icon/logo.png"/> -->
+</div>
