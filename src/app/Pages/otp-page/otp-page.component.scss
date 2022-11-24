@@ -12,8 +12,6 @@
 .form {
     background-color: #391D4B;
     color: #fff;
-    margin-left: 15px;
-    margin-right: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -60,7 +58,7 @@
     }
     .btn {
         width: 60%;
-        height: 35px;
+        height: 45px;
     }
     .tel {
         width: 60%;
@@ -88,7 +86,7 @@
 @media (max-width: 400px) {
     .btn {
         width: 80%;
-        height: 35px;
+        height: 45px;
     }
     .tel {
         width: 80%;
@@ -98,7 +96,7 @@
 @media (max-width: 300px) {
     .btn {
         width: 100%;
-        height: 35px;
+        height: 45px;
     }
     .tel {
         width: 100%;

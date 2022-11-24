@@ -1,82 +1,84 @@
 <!-- <iframe class="custom-frame" #frame width="400" height="400" id="frame" name="frame" frameborder="0" [src]="urlEndpoint | safeResourceUrl" (load)="onLoad()"></iframe> -->
-  
-  <form ngNoForm [action]="url" name="vote" id="vote" method="post" target="responseFrame">
+<h2 class="header">Enter Payment Details</h2>
 
+<div class="main">
+  <form ngNoForm [action]="url" name="vote" id="vote" method="post" target="responseFrame" class="form">
+
+    <mat-form-field class="tel" style="margin-bottom: 16px;">
+      <mat-label>First Name</mat-label>
+      <input type="text" matInput name="first_name" value="Pavan" />
+    </mat-form-field>
+    <br>
+    <mat-form-field class="tel" style="margin-bottom: 16px;">
+      <mat-label>Last Name</mat-label>
+      <input type="text" matInput name="last_name" value="Welihinda" />
+    </mat-form-field>
+    <br>
+    <mat-form-field class="tel" style="margin-bottom: 16px;">
+      <mat-label>Email</mat-label>
+      <input type="text" matInput name="email" value="customer_email@email.com" />
+    </mat-form-field>
+    <br>
+    <mat-form-field class="tel" style="margin-bottom: 16px;">
+      <mat-label>Contact No.</mat-label>
+      <input type="text" matInput name="contact_number" value="0773606370" />
+    </mat-form-field>
+    <br>
+    <mat-form-field class="tel" style="margin-bottom: 16px;">
+      <mat-label>Address Line 1</mat-label>
+      <input type="text" matInput name="address_line_one" value="46/46, Green Lanka Building" />
+    </mat-form-field>
+    <br>
+    <mat-form-field class="tel" style="margin-bottom: 16px;">
+      <mat-label>Address Line 2</mat-label>
+      <input type="text" matInput name="address_line_two" value="Nawam Mawatha" />
+    </mat-form-field>
+    <br>
     <mat-form-field class="tel">
-        <mat-label>First Name</mat-label>
-        <input type="text" matInput name="first_name" value="Pavan" />
-      </mat-form-field>
-<br>
-      <mat-form-field class="tel">
-        <mat-label>Last Name</mat-label>
-        <input type="text" matInput name="last_name" value="Welihinda" />
-      </mat-form-field>
-<br>
-      <mat-form-field class="tel">
-        <mat-label>Email</mat-label>
-        <input type="text" matInput name="email" value="customer_email@email.com" />
-      </mat-form-field>
-<br>
-      <mat-form-field class="tel">
-        <mat-label>Contact No.</mat-label>
-        <input type="text" matInput name="contact_number" value="0773606370" />
-      </mat-form-field>
-<br>        
-      <mat-form-field class="tel">
-        <mat-label>Address Line 1</mat-label>
-        <input type="text" matInput name="address_line_one" value="46/46, Green Lanka Building" />
-      </mat-form-field>
-<br>
-      <mat-form-field class="tel">
-        <mat-label>Address Line 2</mat-label>
-        <input type="text" matInput name="address_line_two" value="Nawam Mawatha" />
-</mat-form-field>
-<br>
-      <mat-form-field class="tel">
-        <mat-label>Process Currency</mat-label>
-        <input type="text" matInput name="process_currency" value="LKR" />
-      </mat-form-field>
-<br>
-     
-        <input type="hidden" name="secret_key" value="71400ba9-42a1-43b5-811f-400398ba1c5b" />
-     
-<br>
-      <mat-form-field class="tel">
-        <mat-label>City</mat-label>
-        <input type="text" matInput name="city" value="Colombo" />
-      </mat-form-field>
-<br>
-      <mat-form-field class="tel">
-        <mat-label>Province</mat-label>
-        <input type="text" matInput name="state" value="Western" />
-      </mat-form-field>
-<br>
-      <mat-form-field class="tel">
-        <mat-label>Postal Code</mat-label>
-        <input type="text" matInput name="postal_code" value="10300" />
-      </mat-form-field>
-<br>
-<input type="text" name="enc_method" value="JCs3J+6oSz4V0LgE0zi/Bg==" />
-<br>
-      <!-- <mat-form-field class="tel">
+      <mat-label>Process Currency</mat-label>
+      <input type="text" matInput name="process_currency" value="LKR" />
+    </mat-form-field>
+    <br>
+
+    <input class="tel1" type="hidden" name="secret_key" value="71400ba9-42a1-43b5-811f-400398ba1c5b" />
+
+    <br>
+    <mat-form-field class="tel" style="margin-bottom: 16px;">
+      <mat-label>City</mat-label>
+      <input type="text" matInput name="city" value="Colombo" />
+    </mat-form-field>
+    <br>
+    <mat-form-field class="tel" style="margin-bottom: 16px;">
+      <mat-label>Province</mat-label>
+      <input type="text" matInput name="state" value="Western" />
+    </mat-form-field>
+    <br>
+    <mat-form-field class="tel">
+      <mat-label>Postal Code</mat-label>
+      <input type="text" matInput name="postal_code" value="10300" />
+    </mat-form-field>
+    <br>
+    <input type="hidden" name="enc_method" value="JCs3J+6oSz4V0LgE0zi/Bg==" />
+    <br>
+    <!-- <mat-form-field class="tel">
         <mat-label>Enc Method</mat-label>
         <input type="text" matInput name="enc_method" [(ngModel)]="cust_details.enc_method" />
       </mat-form-field>
 <br> -->
-      <mat-form-field class="tel">
-        <mat-label>Country</mat-label>
-        <input type="text" matInput name="country" value="Sri Lanka" />
-      </mat-form-field>
-<br>
-     
-        <input type="hidden" name="payment" value={{this.payment}} />
-    
-<br>
-<!-- <button mat-raised-button color="primary" class="btn" type="submit">Confirm</button> -->
-<button mat-raised-button color="primary" class="btn" type="submit">Confirm</button>
+    <mat-form-field class="tel">
+      <mat-label>Country</mat-label>
+      <input type="text" matInput name="country" value="Sri Lanka" />
+    </mat-form-field>
+    <br>
 
-</form>
+    <input class="tel1" type="hidden" name="payment" value={{this.payment}} />
 
+    <br>
+    <!-- <button mat-raised-button color="primary" class="btn" type="submit">Confirm</button> -->
+    <button mat-raised-button color="primary" class="btn" type="submit">CONFIRM</button>
+
+  </form>
+</div>
 
 
 <!-- <form ngNoForm [action]="url" name="vote" id="vote" method="post">
