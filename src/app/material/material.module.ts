@@ -7,6 +7,10 @@ import {MatInputModule} from '@angular/material/input';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatSelectModule} from '@angular/material/select';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatIconModule} from '@angular/material/icon';
 
 const materialComopnents=[
   MatButtonModule,
@@ -15,7 +19,11 @@ const materialComopnents=[
   MatInputModule,
   MatTabsModule,
   MatGridListModule,
-  MatDividerModule
+  MatDividerModule,
+  MatDialogModule,
+  MatSelectModule,
+  MatDatepickerModule,
+  MatIconModule
 ]
 
 @NgModule({
