@@ -1,12 +1,16 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+  </mat-toolbar>
 <div class="main" style="display: flex; justify-content: center;">
     <div class="form">
         <mat-card>
             <mat-card-header class="header">
-                <div class="clinic-name">
-                    <mat-card-title>ABC</mat-card-title>
-                    <mat-card-title>ANIMAL HOSPITAL</mat-card-title>
+                <div class="transaction-status">
+                    <mat-card-title>Transaction Failed!</mat-card-title>
                 </div>
-                <img mat-card-image src="../../../assets/icon/logo.jpg" alt="" class="logo-img">
+                <img mat-card-image src="../../../assets/transaction_failed.png" alt="" class="logo-img">
             </mat-card-header>
             <mat-divider style="margin-left: 15px; margin-right: 15px; margin-bottom: 20px;"></mat-divider>
             <mat-card-content>
@@ -23,9 +27,9 @@
                     <h2 class="field-input">Rs.1250.00</h2>
                 </div>
             </mat-card-content>
-            <mat-card-actions style="display: flex; justify-content:flex-end; margin-right: 10px;">
-                <button mat-raised-button color="primary" class="btn" (click)="openWebxpay()">Confirm</button>
-            </mat-card-actions>
+            <!-- <mat-card-actions style="display: flex; justify-content:flex-end; margin-right: 10px;">
+                <button mat-raised-button color="primary" class="btn">Go Back</button>
+            </mat-card-actions> -->
         </mat-card>
     </div>
 </div>

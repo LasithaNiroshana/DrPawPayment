@@ -11,6 +11,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatIconModule} from '@angular/material/icon';
+import {MatToolbar, MatToolbarModule} from '@angular/material/toolbar';
 
 const materialComopnents=[
   MatButtonModule,
@@ -23,7 +24,8 @@ const materialComopnents=[
   MatDialogModule,
   MatSelectModule,
   MatDatepickerModule,
-  MatIconModule
+  MatIconModule,
+  MatToolbarModule
 ]
 
 @NgModule({

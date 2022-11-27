@@ -14,7 +14,7 @@ export class CustomerDetailsPageComponent implements OnInit {
     this.urlEndpoint = 'https://stagingxpay.info/index.php?route=checkout/billing';
   }
 
-  url="https://stagingxpay.info/index.php?route=checkout/billing"
+  url="https://stagingxpay.info/index.php?route=checkout/billing";
   key = '-----BEGIN PUBLIC KEY-----\n' +
   'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCp0c4+XHtCMcAGgOioDFZziFiQ\n' +
   '2Hqu/E7nHR60btWj2FSCkba1L9CuZ3wfAFM9XmbWdO2akFaBdH933lsIIQOV6usM\n' +
@@ -23,6 +23,18 @@ export class CustomerDetailsPageComponent implements OnInit {
   '-----END PUBLIC KEY-----';
   urlEndpoint: any;
   reqBody: any;
+  first_name=''
+  last_name=''
+  email=''
+  contact_no=''
+  address_line_one=''
+  address_line_two=''
+  process_currency=''
+  secret_key=''
+  state=''
+  country=''
+  postal_code=''
+
 
   
   
@@ -61,15 +73,23 @@ export class CustomerDetailsPageComponent implements OnInit {
   //   // var pageContentUrl = 'data:text/html;base64,';
   // }
 
-  // onLoad(){
-  //   console.log('onLoad triggered.');
-  // }
+  onLoad(){
+    console.log('onLoad triggered.');
+  }
 
-  // submitForm($event: { stopPropagation: () => void; }): boolean {
-  //   $event.stopPropagation();
-  //   this.http.post(this.urlEndpoint, this.reqBody);
-  //   console.log(this.reqBody);
-  //   return true;
-  // }
+  submitForm(){
+    
+  //   this.http.post(this.urlEndpoint, this.first_name+
+  // this.last_name+
+  // this.email+
+  // this.contact_no+
+  // this.address_line_one+
+  // this.address_line_two+
+  // this.process_currency+
+  // this.secret_key+
+  // this.state+
+  // this.country+
+  // this.postal_code);
+  }
 
 }

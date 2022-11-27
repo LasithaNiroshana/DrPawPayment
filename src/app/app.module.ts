@@ -11,13 +11,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { SafeResourceUrlPipe } from './Pipes/safe-resource-url.pipe';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
    routingComponents,
    PaymentDialogComponent,
-   SafeResourceUrlPipe,
+   SafeResourceUrlPipe
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-<!-- <iframe class="custom-frame" #frame width="400" height="400" id="frame" name="frame" frameborder="0" [src]="urlEndpoint | safeResourceUrl" (load)="onLoad()"></iframe> -->
+
 <h2 class="header">Enter Payment Details</h2>
 
 <div class="main">
@@ -75,9 +75,10 @@
 
     <br>
     <!-- <button mat-raised-button color="primary" class="btn" type="submit">Confirm</button> -->
-    <button mat-raised-button color="primary" class="btn" type="submit">CONFIRM</button>
+    <button mat-raised-button color="primary" class="btn" type="submit" (click)="submitForm()" formtarget="_self">CONFIRM</button>
 
   </form>
+  <!-- <iframe class="cusstom-frame" #frame width="400" height="400" id="frame" name="frame" frameborder="0" src="https://stagingxpay.info/index.php?route=checkout/billing"></iframe> -->
 </div>
 
 
